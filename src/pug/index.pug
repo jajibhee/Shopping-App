@@ -1,0 +1,79 @@
+include ./_mixins.pug
+
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    link(rel="stylesheet", href="assets/css/app.css")
+    
+    title Shopping-App
+  body
+    .container
+      .header
+        .menu
+          .btn-line 
+          .btn-line 
+          .btn-line 
+        p Women Clothes
+        div.notification
+          img(class="notification" src="assets/img/shopping-bag.svg", alt="")
+
+      .section
+        .filter
+          p.filter__text Category
+          p.filter__text Sale
+
+        .categories
+          +imageItems("clothing.svg", "Clothing")
+          +imageItems("shoe.svg", "Shoes")
+          +imageItems("accessories.svg", "Accessories")
+          +imageItems("phone.svg", "Phones")
+          +imageItems("computer.svg", "Computers")
+          +imageItems("health.svg", "Health")
+
+          //- without mixins
+          //- .categories__images-container
+          //-   img(src="assets/img/clothing.svg", alt="")
+          //-   p Clothing
+          //- .categories__images-container
+          //-   img(src="assets/img/clothing.svg", alt="")
+          //-   p Clothing
+
+      .dropdown
+        .search 
+          img(src="assets/img/search.svg", alt="")
+          div 
+          p SEARCH
+        
+        .profile-cart
+          .profile-menu
+            img(class="profile-image" src="assets/img/github.jpeg", alt="profile-image") 
+
+            .profile-details
+              .account
+                .name
+                  p Jaji Shopaholicson
+                  p Your Profile
+              .settings
+                img(src="assets/img/settings.svg", alt="")
+
+          .profile-categories
+              //- without mixin
+              //- .category-items
+              //-   img(class="image-items" src="assets/img/male-cloth.svg", alt="")
+              //-   .item-list
+              //-     .item-name
+              //-       p.title Men
+              //-       p.caption Clothing, Shoes & Accessories
+              //-     .item-number
+              //-       p.item-num 17
+              
+              +categoryItems("male-cloth.svg", "Men","Clothing, Shoes & Accessories")
+              +categoryItems("female-cloth.svg", "Women","Clothing, Shoes & Accessories")
+              +categoryItems("wishlist.svg", "Wishlist","You have 3 lists","17")
+              +categoryItems("cart.svg", "Cart","Amount $224.88","3")
+              +categoryItems("order.svg", "Your orders","","1")
+
+
+    script(src="assets/js/app.js")

@@ -1,0 +1,13 @@
+//colors
+$colors: (
+  main: #ffffff,
+  hover: #e7e6e7,
+  text-1: #000,
+  text-2: #fff,
+  dropdown: #d35937,
+  text-3: rgb(211, 207, 207)
+);
+
+@function colors($colorName) {
+  @return map-get($map: $colors, $key: $colorName);
+}

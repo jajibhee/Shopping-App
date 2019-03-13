@@ -1,0 +1,72 @@
+.section {
+  background-color: #fff;
+  padding: 1rem 0;
+  margin: 1.5rem 1rem;
+  border-radius: 0.2rem;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 1px solid colors(hover);
+
+  &__text {
+    width: 4rem;
+    padding: 1.5rem;
+    line-height: 1rem;
+    text-align: center;
+    border-radius: 35px;
+    border: 2px solid colors(hover);
+    color: darken(colors(hover), 20%);
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+
+    &:hover {
+      background-color: colors(hover);
+    }
+  }
+}
+
+//CATEGORIES GRID
+.categories {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  padding-bottom: 2rem;
+
+  &__images-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: calc(50% - 2px);
+    border-top: 2px solid colors(hover);
+    cursor: pointer;
+
+    &:hover {
+      background-color: colors(hover);
+    }
+
+    &:nth-child(odd) {
+      border-right: 2px solid colors(hover);
+    }
+
+    &:nth-child(5) {
+      border-bottom: 2px solid colors(hover);
+    }
+    &:nth-child(6) {
+      border-bottom: 2px solid colors(hover);
+    }
+
+    & p {
+      text-align: center;
+    }
+    & img {
+      padding: 2rem;
+      width: 5rem;
+    }
+  }
+}

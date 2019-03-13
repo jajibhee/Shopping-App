@@ -1,0 +1,14 @@
+mixin imageItems(img, title)
+  .categories__images-container
+    img(src=`assets/img/${img}` alt=`${title}`)
+    p= title
+
+mixin categoryItems(img,title,caption,num)
+  .category-items
+    img(class="image-items" src=`assets/img/${img}`, alt=`${title}`)
+    .item-list
+      .item-name
+        p.title=title
+        p.caption=caption
+      .item-number
+        p.item-num= num

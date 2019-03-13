@@ -1,0 +1,28 @@
+.dropdown {
+  background-color: colors(main);
+  padding: 1rem;
+
+  & .search {
+    // width: 100%;
+    margin: 0.5rem 1rem;
+    padding: 0rem 1rem;
+    background-color: colors(hover);
+    border-radius: 40px;
+    border: 2px solid colors(hover);
+    display: flex;
+    align-items: center;
+    color: gray;
+    box-shadow: inset 3px -1px 7px -6px rgba(0, 0, 0, 0.75);
+
+    & img {
+      width: 1.2rem;
+    }
+
+    & div {
+      height: 1.2rem;
+      background: gray;
+      width: 0.1rem;
+      margin: 0 1.2rem;
+    }
+  }
+}
