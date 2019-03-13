@@ -17,3 +17,9 @@ body {
   margin: 0 auto;
   padding: 0.2rem;
 }
+
+.show {
+  display: block;
+  transition: 0.5 all ease-in-out;
+  transform: none;
+}

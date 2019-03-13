@@ -19,27 +19,6 @@ html(lang="en")
         div.notification
           img(class="notification" src="assets/img/shopping-bag.svg", alt="")
 
-      .section
-        .filter
-          p.filter__text Category
-          p.filter__text Sale
-
-        .categories
-          +imageItems("clothing.svg", "Clothing")
-          +imageItems("shoe.svg", "Shoes")
-          +imageItems("accessories.svg", "Accessories")
-          +imageItems("phone.svg", "Phones")
-          +imageItems("computer.svg", "Computers")
-          +imageItems("health.svg", "Health")
-
-          //- without mixins
-          //- .categories__images-container
-          //-   img(src="assets/img/clothing.svg", alt="")
-          //-   p Clothing
-          //- .categories__images-container
-          //-   img(src="assets/img/clothing.svg", alt="")
-          //-   p Clothing
-
       .dropdown
         .search 
           img(src="assets/img/search.svg", alt="")
@@ -70,10 +49,32 @@ html(lang="en")
               //-       p.item-num 17
               
               +categoryItem("male-cloth.svg", "Men","Clothing, Shoes & Accessories")
-              +categoryItem("female-cloth.svg", "Women","Clothing, Shoes & Accessories")
+              +categoryItems("female-cloth.svg", "Women","Clothing, Shoes & Accessories")
               +categoryItems("wishlist.svg", "Wishlist","You have 3 lists","17")
               +categoryItems("cart.svg", "Cart","Amount $224.88","3")
               +categoryItems("order.svg", "Your orders","","1")
 
 
+      .section
+        .filter
+          p.filter__text Category
+          p.filter__text Sale
+
+        .categories
+          +imageItems("clothing.svg", "Clothing")
+          +imageItems("shoe.svg", "Shoes")
+          +imageItems("accessories.svg", "Accessories")
+          +imageItems("phone.svg", "Phones")
+          +imageItems("computer.svg", "Computers")
+          +imageItems("health.svg", "Health")
+
+          //- without mixins
+          //- .categories__images-container
+          //-   img(src="assets/img/clothing.svg", alt="")
+          //-   p Clothing
+          //- .categories__images-container
+          //-   img(src="assets/img/clothing.svg", alt="")
+          //-   p Clothing
+
+      
     script(src="assets/js/app.js")

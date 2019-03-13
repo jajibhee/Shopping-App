@@ -1,9 +1,15 @@
-//grab the menu icon
+//grab the classes in the html
 const menu = document.querySelector(".menu");
 const btnLine = document.querySelectorAll(".btn-line");
+const dropdown = document.querySelector(".dropdown");
 
 menu.addEventListener("click", toggleMenu);
-
 function toggleMenu() {
-  menu.classList.toggle("show");
+  dropdown.classList.toggle("show");
 }
+
+// dropdown.addEventListener('click', dropMenu);
+
+// function dropMenu(){
+//   dropdown.classList.toggle('show');
+// }

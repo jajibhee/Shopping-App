@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("//grab the menu icon\nconst menu = document.querySelector(\".menu\");\nconst btnLine = document.querySelectorAll(\".btn-line\");\n\nmenu.addEventListener(\"click\", toggleMenu);\n\nfunction toggleMenu() {\n  menu.classList.toggle(\"show\");\n}\n\n//# sourceURL=webpack:///./src/js/app.js?");
+eval("//grab the classes in the html\nconst menu = document.querySelector(\".menu\");\nconst btnLine = document.querySelectorAll(\".btn-line\");\nconst dropdown = document.querySelector(\".dropdown\");\n\nmenu.addEventListener(\"click\", toggleMenu);\nfunction toggleMenu() {\n  dropdown.classList.toggle(\"show\");\n}\n\n// dropdown.addEventListener('click', dropMenu);\n\n// function dropMenu(){\n//   dropdown.classList.toggle('show');\n// }\n\n//# sourceURL=webpack:///./src/js/app.js?");
 
 /***/ })
 
