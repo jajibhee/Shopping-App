@@ -3,6 +3,14 @@ mixin imageItems(img, title)
     img(src=`assets/img/${img}` alt=`${title}`)
     p= title
 
+mixin categoryItem(img,title,caption)
+  .category-items
+    img(class="image-items" src=`assets/img/${img}`, alt=`${title}`)
+    .item-list
+      .item-name
+        p.title=title
+        p.caption=caption
+
 mixin categoryItems(img,title,caption,num)
   .category-items
     img(class="image-items" src=`assets/img/${img}`, alt=`${title}`)
