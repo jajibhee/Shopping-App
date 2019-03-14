@@ -15,11 +15,31 @@ body {
   background-color: colors(hover);
   box-sizing: border-box;
   margin: 0 auto;
-  padding: 0.2rem;
+  // padding: 0.2rem;
 }
 
 .show {
-  display: block;
-  transition: 0.5 all ease-in-out;
   transform: none;
+}
+
+menu.active {
+  transform: rotate(180deg);
+}
+
+.btn-line.active {
+  transition: all 0.5s ease;
+  &:nth-child(1) {
+    transform: rotate(135deg) translate(8px, 5px);
+  }
+  &:nth-child(2) {
+    transform: rotate(90deg) translate(-2px, 1px);
+  }
+  &:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -15px);
+  }
+}
+
+.current {
+  color: blue;
+  background-color: green;
 }

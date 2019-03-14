@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("//grab the classes in the html\nconst menu = document.querySelector(\".menu\");\nconst btnLine = document.querySelectorAll(\".btn-line\");\nconst dropdown = document.querySelector(\".dropdown\");\n\nmenu.addEventListener(\"click\", toggleMenu);\nfunction toggleMenu() {\n  dropdown.classList.toggle(\"show\");\n}\n\n// dropdown.addEventListener('click', dropMenu);\n\n// function dropMenu(){\n//   dropdown.classList.toggle('show');\n// }\n\n//# sourceURL=webpack:///./src/js/app.js?");
+eval("//grab the classes in the html\nconst menu = document.querySelector(\".menu\");\nconst btnLine = document.querySelectorAll(\".btn-line\");\nconst dropdown = document.querySelector(\".dropdown\");\nconst section = document.querySelector(\".section\");\nconst profileCategories = document.querySelector(\".profile-categories\");\nconst categoryItems = document.querySelectorAll(\".category-items\");\n\nmenu.addEventListener(\"click\", toggleMenu);\nfunction toggleMenu() {\n  menu.classList.toggle(\"active\");\n  dropdown.classList.toggle(\"show\");\n  section.classList.toggle(\"close\");\n  profileCategories.classList.toggle(\"active\");\n\n  categoryItems.forEach(items => items.classList.toggle(\"active\"));\n\n  btnLine.forEach(item => item.classList.toggle(\"active\"));\n}\n\ncategoryItems.addEventListener(\"click\", activeItem);\nfunction activeItem() {\n  categoryItems.forEach(items => items.classList.toggle(\"current\"));\n}\n\n//# sourceURL=webpack:///./src/js/app.js?");
 
 /***/ })
 

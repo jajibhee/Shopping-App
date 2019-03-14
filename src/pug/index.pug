@@ -11,48 +11,49 @@ html(lang="en")
   body
     .container
       .header
-        .menu
-          .btn-line 
-          .btn-line 
-          .btn-line 
-        p Women Clothes
-        div.notification
-          img(class="notification" src="assets/img/shopping-bag.svg", alt="")
+        .header-1
+          .menu
+            .btn-line 
+            .btn-line 
+            .btn-line 
+          p Women Clothes
+          div.notification
+            img(class="notification" src="assets/img/shopping-bag.svg", alt="")
 
-      .dropdown
-        .search 
-          img(src="assets/img/search.svg", alt="")
-          div 
-          p SEARCH
+        .dropdown
+          .search 
+            img(src="assets/img/search.svg", alt="")
+            div 
+            p SEARCH
         
-        .profile-cart
-          .profile-menu
-            img(class="profile-image" src="assets/img/github.jpeg", alt="profile-image") 
+          .profile-cart
+            .profile-menu
+              img(class="profile-image" src="assets/img/github.jpeg", alt="profile-image") 
 
-            .profile-details
-              .account
-                .name
-                  p Jaji Shopaholicson
-                  p Your Profile
-              .settings
-                img(src="assets/img/settings.svg", alt="")
+              .profile-details
+                .account
+                  .name
+                    p Jaji Shopaholicson
+                    p Your Profile
+                .settings
+                  img(src="assets/img/settings.svg", alt="")
 
-          .profile-categories
-              //- without mixin
-              //- .category-items
-              //-   img(class="image-items" src="assets/img/male-cloth.svg", alt="")
-              //-   .item-list
-              //-     .item-name
-              //-       p.title Men
-              //-       p.caption Clothing, Shoes & Accessories
-              //-     .item-number
-              //-       p.item-num 17
+            .profile-categories
+                //- without mixin
+                //- .category-items
+                //-   img(class="image-items" src="assets/img/male-cloth.svg", alt="")
+                //-   .item-list
+                //-     .item-name
+                //-       p.title Men
+                //-       p.caption Clothing, Shoes & Accessories
+                //-     .item-number
+                //-       p.item-num 17
               
-              +categoryItem("male-cloth.svg", "Men","Clothing, Shoes & Accessories")
-              +categoryItems("female-cloth.svg", "Women","Clothing, Shoes & Accessories")
-              +categoryItems("wishlist.svg", "Wishlist","You have 3 lists","17")
-              +categoryItems("cart.svg", "Cart","Amount $224.88","3")
-              +categoryItems("order.svg", "Your orders","","1")
+                +categoryItem("male-cloth.svg", "Men","Clothing, Shoes & Accessories")
+                +categoryItem("female-cloth.svg", "Women","Clothing, Shoes & Accessories")
+                +categoryItems("wishlist.svg", "Wishlist","You have 3 lists","17")
+                +categoryItems("cart.svg", "Cart","Amount $224.88","3")
+                +categoryItems("order.svg", "Your orders","","1")
 
 
       .section

@@ -1,7 +1,18 @@
-.header {
+header {
   width: 100%;
   border-bottom: 1px solid black;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-1 {
   background-color: #fff;
+  z-index: 5;
+  // width: 100%;
+  // border-bottom: 1px solid black;
+  // // position: fixed;
+  // background-color: #fff;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -12,12 +23,18 @@
     font-size: 1.3rem;
   }
 
-  & .menu .btn-line {
-    width: 1.5rem;
-    height: 0.2rem;
-    background: rgb(207, 204, 204);
-    margin-bottom: 0.3rem;
-    margin-left: 1rem;
+  & .menu {
+    // position: relative;
+    // z-index: 1;
+    cursor: pointer;
+
+    & .btn-line {
+      width: 1.5rem;
+      height: 0.2rem;
+      background: rgb(207, 204, 204);
+      margin-bottom: 0.3rem;
+      margin-left: 1rem;
+    }
   }
 }
 
@@ -32,8 +49,10 @@
     content: "";
     bottom: -3;
     left: -2;
-    border: 0.3rem solid gray;
+    border: 0.3rem solid white;
     background-color: red;
+    box-shadow: 1px;
+
     width: 0.35rem;
     height: 0.35rem;
     border-radius: 50%;

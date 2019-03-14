@@ -60,13 +60,24 @@
   position: relative;
   margin-top: 1rem;
   background-color: colors(dropdown);
+  transform: translateX(-1000px);
+  transition: all 0.7s ease-out;
+  cursor: pointer;
 
+  &.active {
+    transform: none;
+  }
   & .category-items {
     padding: 1.5rem 0.5rem;
     border-top: 1px white solid;
     display: flex;
+    transform: translateX(-1000px);
+    transition: all 0.9s ease-out;
     align-items: center;
 
+    &.active {
+      transform: none;
+    }
     & .item-list {
       display: flex;
       align-items: center;
