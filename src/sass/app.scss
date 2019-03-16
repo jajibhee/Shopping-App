@@ -43,3 +43,10 @@ menu.active {
   color: blue;
   background-color: green;
 }
+
+//sass forloop for the category items
+@for $x from 1 through 5 {
+  .category-items:nth-child(#{$x}) {
+    transition-delay: 0.15s * $x;
+  }
+}
